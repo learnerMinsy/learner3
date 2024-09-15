@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:0px ;
+    background-color:#ffd8de;
+    
+}
+nav {
+    background-color:hotpink; 
+    height:80px;
+    margin-bottom: 12px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    display: block;
+    color:white;
+    font-size:24px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li i {
+    margin-right:8px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size:24px;
+    padding: 5px;
+    
+}
+.bx-cart {
+    font-size: 30px;
+    color: #333; 
+    cursor: pointer;
+     margin-top:8px;
+  }
+  
+  
+  .cart-count {
+    background-color:black;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  
+  li:hover .bx-cart {
+    color:#000; 
+  }
+nav ul li a:hover {
+    background-color:green;
+}
+.logo img {
+    height: 60px;
+    margin-left: 30px;
+    margin-top:10px;
+    border-radius:50% ;
+    float: left;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding:10px 0 ;
+    text-align: center;
+
+    
+}
+.hero h1:hover {
+    color:black;
+    font-size:52px ;
+
+}
+
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+
+}
+.hero p:hover{
+      color:black ;
+      font-size:32px ;
+}
+.btn {
+    background-color:black;
+    color:#fff;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left:45% ;
+    border-radius: 5px;
+}
+.btn:hover{
+       background-color: hotpink;
+       font-size:20px;
+}
+.hero .a{
+    background-image: url(images/9764.jpg_wh1200.jpg);
+    background-size: cover;
+    background-position: center;
+    height:600px ;
+    width:100% ;
+    margin-top:30px;
+}
+
+.dress-collection{
+    padding:10px ; 
+    text-align: center;
+}
+.dress-collection h2{
+    font-size:36px ;
+    margin-bottom: 10px;
+    margin-left:15px;
+    padding:40px ;
+}
+.dress-collection h2:hover{
+        color:hotpink ;
+        font-size:40px ;
+    }
+
+.container {
+    display: flex;
+    justify-content:center;
+    width:100%;
+    background-color:gainsbo ;
+    margin-left:12% ;
+    border:2px solid black;
+    max-width: 1024px;
+    margin-bottom:20px ;
+    background-image: url(images/index/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtMjE4YmF0Y2g2LWthdGllLTMzLmpwZw.jpg);
+    background-position:center ;
+    background-size: cover;
+    
+}
+
+.box {
+    background-color: #fff;
+    width:20%;
+    border:2px solid black;
+    border-radius:0 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height:420px ;
+    margin:30px;
+
+}
+
+.box-image img {
+    width:250px;
+    border-radius:0 30px ;
+    height: 350px;
+    border:2px solid black;
+    display: block;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.box-image img:hover {
+    transform: scale(1.1);
+}
+.box-text {
+    padding: 15px;
+    color:hotpink ;
+}
+
+.btn1 {
+    background-color:black;
+    color:#fff;
+    padding: 12px 15px;
+    text-decoration: none;
+    font-size:12px;
+    border-radius: 15px;
+}
+.btn1:hover{
+    background-color: hotpink;
+    font-size:15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: pink;;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.start-shopping {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.start-shopping:hover {
+    background-color: #555;
+}
+.mode-toggle {
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 24px;
+  
+  }
+  .mode-toggle i {
+    transition: color 0.3s;
+  }
+  body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+  body.dark-mode .navbar{
+    background-color: #444;
+  }
+
+.image1{
+      display: flex;
+      margin-top:30px ;
+}
+.container-offer{
+    background-image:url(images/index/discount-special-offer-up-to-20-off-label-template-design-illustration-vector.jpg);
+    background-position:center ;
+    background-size: cover;
+    width:50%;
+    height:540px ;
+    transition: 0.3s;
+    overflow: hidden;
+
+}
+.container-offer:hover{
+    transform: scale(1.1);
+}
+.container-pic{
+    background-image:url(images/index/new-clothes-sale-offer-templates-design-9530c5771cb0629873b8f5d8eda4b834_screen.jpg) ;
+    background-position:center ;
+    background-size: cover;
+    width:50%;
+    height:540px ;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.container-pic:hover{
+      transform:scale(1.1);
+}
+.offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color:#ffd8de;
+    margin-top: 50px;
+
+}
+
+.offer-card {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+    
+}
+.offer-card:hover{
+      transform: scale(1.1);
+}
+
+.offer-text {
+    width: 50%;
+    padding: 20px;
+    background-color: #78f08c;
+}
+
+.offer-text h2 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    text-align: center;
+    color: #333;
+}
+
+.offer-text p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #555;
+}
+
+#shop-now-btn {
+    padding: 10px 20px;
+    width:50% ;
+    background-color: #ff4081;
+    color:#fff;
+    text-align: center;
+    margin-left:25%;
+    font-size:20px ;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+#shop-now-btn:hover {
+    background-color: #e73370;
+}
+
+.offer-image {
+    width: 50%;
+    background-image:url(images/index/special-offer-creative-sale-banner-design_1017-16284.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.offer-image:hover{
+       transform: scale(1.1);
+}
+
+.image2{
+    display: flex;
+    margin-top:80px ;
+    margin-bottom: 100px;
+}
+.container-offer1{
+  background-image:url(images/index/depositphotos_361638498-stock-illustration-20-off-discount-promotion-sale.jpg);
+  background-position:center ;
+  background-size: cover;
+  width:50%;
+  height:500px ;
+  transition: 0.3s;
+  overflow: hidden;
+
+}
+.container-offer1:hover{
+  transform: scale(1.1);
+}
+.container-pic1{
+  background-image:url(images/index/clothing-sale-design-template-b167481179355a5b77ae3d85261081ae_screen.jpg) ;
+  background-position:center ;
+  background-size: cover;
+  width:50%;
+  height:500px ;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.container-pic1:hover{
+    transform:scale(1.1);
+}
+ 
+.image3{
+    display: flex;
+    margin-top:30px;
+    margin-bottom: 100px;
+}
+.container-offer2{
+  background-image:url(images1/coat.jpeg);
+  background-position:center ;
+  background-size: cover;
+  width:100%;
+  height:500px ;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.container-offer2:hover{
+  transform: scale(1.1);
+}
+.container-pic2{
+  background-image:url(images1/reddress.jpeg);
+  background-position:center ;
+  background-size: cover;
+  width:100%;
+  height:500px ;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.container-pic2:hover{
+    transform:scale(1.1);
+}
+.video-container {
+    position: relative;
+    width:500% ;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.video-container {
+    position: relative;
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+video {
+    width:100%;
+    height:500px; 
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-column p, .footer-column ul {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.footer-column button {
+    padding: 10px 20px;
+    background-color:hotpink;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-column button:hover {
+    background-color:pink;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+

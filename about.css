@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin:0px ;
+  background-color:#ffd8de;
+  background-image:url(images1/vibrant-pink-watercolor-painting-background_53876-58931.avif);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+  
+}
+nav {
+  background-color:hotpink; 
+  height:80px;
+  margin-bottom: 12px;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  display: block;
+  color:white;
+  font-size:24px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav ul li i {
+  margin-right:8px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size:24px;
+  padding: 5px;
+  
+}
+.bx-cart {
+  font-size: 30px;
+  color: #333; /* Change this to the desired color */
+  cursor: pointer;
+   margin-top:8px;
+}
+
+/* Styling for the cart count bubble */
+.cart-count {
+  background-color:black;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+li:hover .bx-cart {
+  color:#000; 
+}
+nav ul li a:hover {
+  background-color:green;
+}
+.logo img {
+  height: 60px;
+  margin-left: 30px;
+  margin-top:10px;
+  border-radius:50% ;
+  float: left;
+}
+
+.about-section {
+    padding: 25px;
+    
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.container p{
+    line-height:1.8;
+    padding: 20px;
+    font-size:18px ;
+}
+h2 ul li{
+    line-height:0.8 ;
+}
+
+h1, h2 {
+    color:white;
+}
+h2:hover {
+    color:black;
+
+}
+h1:hover {
+    color:black;
+
+}
+
+footer {
+    background-color:gray;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+  footer ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  footer ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  footer ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  footer .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  footer .social-media a {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  footer ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color:blue;
+  }
+  .social-media .facebook {
+    color: #3b5998;
+  }
+  .social-media .facebook:hover {
+    color: #1d3465;
+  }
+  .social-media .twitter {
+    color: #1da1f2;
+  }
+  .social-media .twitter:hover {
+    color: #0377a5;
+  }
+  .social-media .instagram {
+    color: #c13584;
+  }
+  .social-media .instagram:hover {
+    color: #a42665;
+  }
+
+

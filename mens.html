@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Dress Sale</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="mens.css">
+</head>
+    <header>
+        <div class="logo">
+            <img src="images\girllogo.jpg" alt="Dress Sale Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="about.html"><i class='bx bx-info-circle'></i> About</a></li>
+                <li><a href="contact.html"><i class='bx bx-envelope'></i> Contact</a></li>
+                <li><a href="login1.html"><i class='bx bx-log-in icon'></i>Login</a></li>
+                <li><a href="signnup1.html"><i class='bx bx-user-plus icon'></i>Singup</a></li>
+                <li><i class='bx bx-cart'></i><span class="cart-count" id="count">0</span></li>
+    </ul>
+</nav>
+            <div class="total-amount">
+                Total Amount: <i class='bx bx-rupee'></i><span id="total">0</span>
+            </div>
+            <button class="button" onclick="addtocart()"></button>
+    </header>
+    <div class="mode-toggle" onclick="toggleMode()">
+        <i class='bx bx-moon' id="mode-icon"></i>
+    </div>
+    <div class="a">
+        <h3>Mens Collection</h3>
+    </div>
+<body>
+
+    <div class="image-container">
+        <img src="images/mens/29fa12fe57235863876de6f5128a2759.jpg"
+         alt="Click to reveal images" id="main-image">
+    </div>
+
+    <div class="reveal-images" id="image-row">
+        <a href="women.html"><img src="images/womens/51Yjzhagj6L._AC_UY1100_.jpg" alt="Image 2"></a>
+        <a href="mens.html"><img src="images/mens/71IWAG0I1hL._AC_UY1100_.jpg" alt="Image 3"></a>
+        <a href="kids.html"><img src="images1/kids/5ffa37363c24fdc579f632713ea7a759.jpg" alt="Image 4"><a>
+    </div>
+
+
+    <div class="container">
+        <div class="box">
+            <div class="box-image">
+                <img src="images\mens\3f0efe0f3f907f4e9441d360fa255841.jpg" alt="Placeholder Image1">
+            </div>
+            <div class="box-text">
+                <p>formal-suite</p>
+                <p><i class='bx bx-rupee'></i>8,000</p>
+                <button onclick="total(8000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+            <img src="images\mens\09803300896c464b55c6d80a9870052b.jpg" 
+            alt="Placeholder Image2">
+            </div>
+            <div class="box-text">
+                <p>mens fashion dress</p>
+                <p><i class='bx bx-rupee'></i>8,000</p>
+                <button onclick="total(8000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+             <img src="images\mens\pri_175_p-1668238079.jpg" 
+             alt="Placeholder Image3">
+            </div>
+            <div class="box-text">
+                <p>Blue t-shirt </p>
+                <p><i class='bx bx-rupee'></i>4,000</p>
+                <button onclick="total(4000)">Add to cart</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                 <img src="images\mens\6b7a6db4af65aee78b7257b665f38a59.jpg" 
+                 alt="Placeholder Image4">
+                </div>
+                <div class="box-text">
+                   <p>mordern t-shirt</p>
+                   <p><i class='bx bx-rupee'></i>3,000</p>
+                   <button onclick="total(3000)">Add to cart</button>
+                </div>
+                </div>
+            </div>
+
+
+         
+            <div class="container">
+                <div class="box">
+                    <div class="box-image">
+                        <img src="images\mens\71GITfTSeRL._AC_UY1100_.jpg" 
+                        alt="dress5">
+                    </div>
+                    <div class="box-text">
+                        <p>printed shirt</p>
+                        <p><i class='bx bx-rupee'></i>5,000</p>
+                        <button onclick="total(5000)">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-image">
+                    <img src="images\mens\29fa12fe57235863876de6f5128a2759.jpg" 
+                    alt="Placeholder Image6">
+                    </div>
+                    <div class="box-text">
+                        <p>mordern coat-suite</p>
+                        <p><i class='bx bx-rupee'></i>8,000</p>
+                        <button onclick="total(8000)">Add to cart</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-image">
+                     <img src="images\mens\51Yp6tgv9IL._AC_UY1100_.jpg" 
+                     alt="Placeholder Image7">
+                    </div>
+                    <div class="box-text">
+                        <p>white classic dress</p>
+                        <p><i class='bx bx-rupee'></i>6,000</p>
+                        <button onclick="total(6000)">Add to cart</button>
+                    </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-image">
+                         <img src="images\mens\71IWAG0I1hL._AC_UY1100_.jpg" 
+                         alt="Placeholder Image8">
+                        </div>
+                        <div class="box-text">
+                           <p>Black shirt and pants</p>
+                           <p><i class='bx bx-rupee'></i>4,000</p>
+                           <button onclick="total(6000)">Add to cart</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="images\mens\JPP3308-1.jpg" alt="Placeholder Image1">
+                            </div>
+                            <div class="box-text">
+                                <p>blue green shade shirt</p>
+                                <p><i class='bx bx-rupee'></i>5,000</p>
+                                <button onclick="total(5000)">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-image">
+                            <img src="images\mens\4d13da0f2fd161fe399aaeab9b93f2c9.jpg" 
+                            alt="Placeholder Image2">
+                            </div>
+                            <div class="box-text">
+                                <p>stylish  mens wears</p>
+                                <p><i class='bx bx-rupee'></i>5,000</p>
+                                <button onclick="total(5000)">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-image">
+                             <img src="images\mens\jump-cuts-printed-men-s-yellow-lygra-shirt-product-images-rv5v6bejym-4-202303291916.jpg" 
+                             alt="Placeholder Image3">
+                            </div>
+                            <div class="box-text">
+                                <p>multicolor shirt</p>
+                                <p><i class='bx bx-rupee'></i>5,000</p>
+                                <button onclick="total(5000)">Add to cart</button>
+                            </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-image">
+                                 <img src="images\mens\fd05eac683bbc8a383abfdce7816683c.jpg" 
+                                 alt="Placeholder Image4">
+                                </div>
+                                <div class="box-text">
+                                   <p>Black stylish wear</p>
+                                   <p><i class='bx bx-rupee'></i>10,000</p>
+                                   <button onclick="total(10000)">Add to cart</button>
+                                </div>
+                                </div>
+                            </div>
+
+  <div class="image-container1">
+                <div class="slider">
+                    <img src="images/mens/rose_pink_polo_t-shirt_base_01_05_2024_700x933.jpg" alt="Image 1">
+                    <img src="images/mens/09803300896c464b55c6d80a9870052b.jpg" alt="Image 2">
+                    <img src="images/mens/t-shirts-for-men-stylish.jpg" alt="Image 3">
+                    <img src="images/mens/hockerty_man_wearing_jeans_business_casual_style_in_a_modern_of_ba355636_43cb_40b9_8eef_585ac6ce7581.jpg" alt="Image 3">
+                    <img src="images/mens/pri_175_p-1696822165.jpg" alt="Image 3">
+                    <img src="images/mens/Made-In-The-Shade-Navy-SDL171422251-1-d6be7.jpeg" alt="Image 4">
+                </div>
+            </div>
+
+
+
+
+
+              <div class="container">
+                  <div class="box">
+                <div class="box-image">
+                <img src="images\mens\men-s-multicolor-all-over-printed-oversized-shirt-620475-1720181236-1.jpg"
+                 alt="Placeholder Image1">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>multicolor-shirt</p>
+                                        <p><i class='bx bx-rupee'></i>4,000</p>
+                                        <button onclick="total(4000)">Add to cart</button>
+                                    </div>
+                                </div>
+                 <div class="box">
+                     <div class="box-image">
+                    <img src="images\mens\elegant_stylish_peach_indowestern_for_men-sg195389_4_.jpg" 
+                   alt="Placeholder Image2">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>pink shrvani</p>
+                                        <p><i class='bx bx-rupee'></i>6,000</p>
+                                        <button onclick="total(6000)">Add to cart</button>
+                                    </div>
+                                </div>
+                      <div class="box">
+                          <div class="box-image">
+                         <img src="images\mens\Made-In-The-Shade-Navy-SDL171422251-1-d6be7.jpeg" 
+                                     alt="Placeholder Image3">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>designed white shirt</p>
+                                        <p><i class='bx bx-rupee'></i>3,000</p>
+                                        <button onclick="total(3000)">Add to cart</button>
+                                    </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="box-image">
+                                         <img src="images\mens\2326bcf6ef7e0704ade7058f100d29b3.jpg" 
+                                         alt="Placeholder Image4">
+                                        </div>
+                                        <div class="box-text">
+                                           <p>cement-color kurties</p>
+                                           <p><i class='bx bx-rupee'></i>8,000</p>
+                                           <button onclick="total(8000)">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="image1">
+        
+                                        <div class="container-offer"></div>
+                                        <div class="container-pic"></div>
+                                    </div>
+
+
+
+                                    <div class="container">
+                            <div class="box">
+                              <div class="box-image">
+                               <img src="images\mens\3f0efe0f3f907f4e9441d360fa255841.jpg" 
+                                   alt="Placeholder Image1">
+                                            </div>
+                                            <div class="box-text">
+                                                <p>black coat-shirt</p>
+                                                <p><i class='bx bx-rupee'></i>10,000</p>
+                                                <button onclick="total(10000)">Add to cart</button>
+                                            </div>
+                                        </div>
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="images\mens\PRE_30_1fb18ae5-7247-44e6-ad36-d48b07e69738.jpg" 
+                                     alt="Placeholder Image2">
+                                            </div>
+                                            <div class="box-text">
+                                   <p>greyish white shirt</p>
+                                      <p><i class='bx bx-rupee'></i>3,000</p>
+                                                <button onclick="total(3000)">Add to cart</button>
+                                            </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="box-image">
+                                             <img src="images\mens\pri_175_p-1669271232.jpg" 
+                                             alt="Placeholder Image3">
+                                            </div>
+                                            <div class="box-text">
+                                                <p>pink t-shirt</p>
+                                                <p><i class='bx bx-rupee'></i>4,000</p>
+                                                <button onclick="total(4000)">Add to cart</button>
+                                            </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="box-image">
+                                                 <img src="images\mens\pri_175_p-1696822165.jpg" 
+                                                 alt="Placeholder Image4">
+                                                </div>
+                                                <div class="box-text">
+                                                   <p>black jacket</p>
+                                                   <p><i class='bx bx-rupee'></i>6,000</p>
+                                                   <button onclick="total(5000)">Add to cart</button>
+                                                </div>
+                                                </div>
+                                            </div>
+                <div class="container">
+                <div class="box">
+                    <div class="box-image">
+                    <img src="images\mens\pri_175_p-1604760578.jpg" alt="Placeholder Image1">
+                    </div>
+                    <div class="box-text">
+                        <p>Black white t-shirt</p>
+                        <p><i class='bx bx-rupee'></i>5,000</p>
+                        <button onclick="total(5000)">Add to cart</button>
+                        </div>
+                    </div>
+                        <div class="box">
+                    <div class="box-image">
+                    <img src="images\mens\men-s-purple-wakanda-forever-graphic-printed-oversized-t-shirt-627899-1722321172-1.jpg" 
+                 alt="Placeholder Image2">
+                </div>
+                    <div class="box-text">
+                    <p>vakanda voilet t-shirt</p>
+                        <p><i class='bx bx-rupee'></i>4,000</p>
+                        <button onclick="total(4000)">Add to cart</button>
+                        </div>
+                        </div>
+                                                <div class="box">
+                                                    <div class="box-image">
+                                                     <img src="images\mens\t-shirts-for-men-stylish.jpg" 
+                                                     alt="Placeholder Image3">
+                                                    </div>
+                                                    <div class="box-text">
+                                                        <p>Dark blue t-shirt</p>
+                                                        <p><i class='bx bx-rupee'></i>4,000</p>
+                                                        <button onclick="total(4000)">Add to cart</button>
+                                                    </div>
+                                                    </div>
+<div class="box">
+          <div class="box-image">
+        <img src="images\mens\rose_pink_polo_t-shirt_base_01_05_2024_700x933.jpg" 
+         alt="Placeholder Image4">
+        </div>
+                                                        <div class="box-text">
+                                                           <p>pink  t-shirt</p>
+                                                           <p><i class='bx bx-rupee'></i>2,000</p>
+                                                           <button onclick="total(2000)">Add to cart</button>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+</body>
+                            <footer>
+                     <p>&copy; 2021 - All rights reserved</p>
+                                    <ul>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        </ul>
+                                         <div class="social-media">
+                                         <a href="#" class="facebook"><i class='bx bxl-facebook-circle'></i></a>
+                                        <a class="twitter" href="#"><i class='bx bxl-twitter'></i></a>
+                                        <a class="instagram" href="#"><i class='bx bxl-instagram'></i></a>
+                                        </div>
+                                        </footer>
+                                                      
+                                        
+                                        
+    <script>
+        function toggleMode() {
+            var body = document.body;
+                    var modeIcon = document.getElementById("mode-icon");
+                                                
+                    body.classList.toggle("dark-mode");
+                                                
+                 if (body.classList.contains("dark-mode")) {
+                  modeIcon.classList.replace("bx-moon", "bx-sun");
+                } else {
+                 modeIcon.classList.replace("bx-sun", "bx-moon");
+                }
+                 }
+
+        var totalAmount = 0;
+
+        function total(price) {
+            var ct = document.querySelector("#count").innerHTML;
+            ct = Number(ct);
+            ct++;
+            document.querySelector("#count").innerHTML = ct;
+
+            //-----------
+
+
+            var t=document.querySelector("#total").innerHTML;
+            t = Number(t);
+
+            t += price;
+            document.querySelector("#total").innerHTML = t;
+        }
+        document.getElementById("main-image").addEventListener("click", function() {
+            var imageRow = document.getElementById("image-row");
+            if (imageRow.style.display === "none" || imageRow.style.display === "") {
+                imageRow.style.display = "flex";
+            } else {
+                imageRow.style.display = "none";
+            }
+        });
+ </script>
+                                       
+    
+    </html>

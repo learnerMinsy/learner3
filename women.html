@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection - Dress Shop</title>
+    <link rel="stylesheet" href="women.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<header>
+        <div class="logo">
+            <img src="images\girllogo.jpg" alt="Dress Sale Logo">
+        </div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="about.html"><i class='bx bx-info-circle'></i> About</a></li>
+                <li><a href="contact.html"><i class='bx bx-envelope'></i> Contact</a></li>
+                <li><a href="login1.html"><i class='bx bx-log-in icon'></i>Login</a></li>
+                <li><a href="signup.html"><i class='bx bx-user-plus icon'></i>Singup</a></li>
+                <li><i class='bx bx-cart'></i><span class="cart-count" id="count">0</span></li>
+            </ul>
+        </nav>
+</header>       
+        <div class="total-amount">
+            Total Amount: <i class='bx bx-rupee'></i><span id="total">0</span>
+        </div>
+        <button class="button" onclick="addtocart()"></button>
+    
+    <script src="script.js"></script>
+
+    <div class="mode-toggle" onclick="toggleMode()">
+        <i class='bx bx-moon' id="mode-icon"></i>
+    </div>
+    <div class="a">
+        <h3>Women's Collection</h3>
+    </div>
+<body>
+    <div class="image-container">
+        <img src="images/womens/51Yjzhagj6L._AC_UY1100_.jpg" alt="Click to reveal images" id="main-image">
+    </div>
+
+    <div class="reveal-images" id="image-row">
+        <a href="women.html"><img src="images/womens/51Yjzhagj6L._AC_UY1100_.jpg" alt="Image 2"></a>
+        <a href="mens.html"><img src="images/mens/71IWAG0I1hL._AC_UY1100_.jpg" alt="Image 3"></a>
+        <a href="kids.html"><img src="images1/kids/5ffa37363c24fdc579f632713ea7a759.jpg" alt="Image 4"></a>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <div class="box-image">
+                <img src="images/womens/Gazal-Fashions-Banarasi-Silk-Embellished-SDL472656029-1-6ea6c.jpeg" alt="Placeholder Image">
+            </div>
+            <div class="box-text">
+                <p>grey-white silk</p>
+                <p><i class='bx bx-rupee'></i>5000</p>
+                <button onclick="showPopup(5000)">Add to cart</button>
+            </div>
+        </div>
+        
+        <div id="cart-popup" class="cart-popup">
+            <div class="cart-popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <p>Item has been added to your cart!</p>
+                <p>Total Price: <i class='bx bx-rupee'></i><span id="total-price"></span></p>
+                <button onclick="closePopup()">Close</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-image">
+            <img src="images/womens/shree-jeenmata-collection-Brown-Synthetic-SDL467781726-1-38f42.jpeg" alt="Placeholder Image1">
+            </div>
+            <div class="box-text">
+                <p>lightpink  chudi</p>
+                <p><i class='bx bx-rupee'></i>3,000</p>
+                <a href="cart.html">
+                    <button>Add to Cart</button>
+                </a>
+                
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+             <img src="images\womens\71fciho5EeL._AC_UY1100_FMwebp_.webp" alt="Placeholder Image2">
+            </div>
+            <div class="box-text">
+                <p>dark red chudi</p>
+                <p><i class='bx bx-rupee'></i>2,000</p>
+                <button onclick="total(2000)">Add to cart</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                 <img src="images\womens\71Ji2hUMr7L._AC_UY1100_FMwebp_ - Copy.webp" alt="Placeholder Image3">
+                </div>
+                <div class="box-text">
+                   <p>pinkish full chudi</p>
+                   <p><i class='bx bx-rupee'></i>10,000</p>
+                   <button onclick="total(10000)">Add to cart</button>
+                </div>
+                </div>
+            </div>
+    <div class="container">
+        <div class="box">
+            <div class="box-image">
+                <img src="images\womens\BridalLehengawithFrontOpenGownPakistaniDress_1800x1800_4a1a6e3b-1310-4f46-a1e8-d7de36f2a5ef.jpg" 
+                alt="Placeholder Image4">
+            </div>
+            <div class="box-text">
+                <p>sandal-golden chudi</p>
+               <p><i class='bx bx-rupee'></i>6,000</p>
+               <button onclick="total(6000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+            <img src="images\womens\81tkaZfmBDL._AC_UY1100_.jpg" alt="Placeholder Image5">
+            </div>
+            <div class="box-text">
+                <p>pink cotton saree</p>
+                <p><i class='bx bx-rupee'></i>3,000</p>
+                <button onclick="total(3000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+             <img src="images\womens\71himgdfl3L._AC_UY1100_.jpg" alt="Placeholder Image6">
+            </div>
+            <div class="box-text">
+                <p>skyblue saree</p>
+                <p><i class='bx bx-rupee'></i>3500</p>
+                <button onclick="total(3500)">Add to cart</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                 <img src="images\womens\81eacecmaoL._AC_UY1100_.jpg" alt="Placeholder Image7">
+                </div>
+                <div class="box-text">
+                   <p>pink flower saree</p>
+                   <p><i class='bx bx-rupee'></i>2,000</p>
+                   <button onclick="total(2000)">Add to cart</button>
+                </div>
+                </div>
+            </div>
+    
+    <div class="container">
+        <div class="box">
+            <div class="box-image">
+                <img src="images\womens\18312391-4ABF-4720-AF52-9270811896D9_800x.jpg" alt="Placeholder Image8">
+            </div>
+            <div class="box-text">
+                <p>mordern dress</p>
+                <p><i class='bx bx-rupee'></i>4,000</p>
+                <button onclick="total(4000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+            <img src="images\womens\1559536960_580_Comfy-Jean-Outfits-woman-fashion-fashionoutfits-fashiontrend-fashiontrendso.jpg" alt="Placeholder Image9">
+            </div>
+            <div class="box-text">
+                <p>formal office suite</p>
+                <p><i class='bx bx-rupee'></i>5,000</p>
+                <button onclick="total(5000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+             <img src="images/womens/m-a-line-kurti-4-dxfashion-original-imagysyuqzrpygny.jpeg" alt="Placeholder Image10">
+            </div>
+            <div class="box-text">
+                <p>Flawless tops</p>
+                <p><i class='bx bx-rupee'></i>2,000</p>
+                <button onclick="total(2000)">Add to cart</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                 <img src="images\womens\JannatZubairRahmani-44.jpg" 
+                 alt="Placeholder Image11">
+                </div>
+                <div class="box-text">
+                   <p>Black party dress</p>
+                   <p><i class='bx bx-rupee'></i>5,000</p>
+                   <button onclick="total(5000)">Add to cart</button>
+                </div>
+                </div>
+            </div>
+    
+    <div class="container">
+        <div class="box">
+            <div class="box-image">
+                <img src="images\womens\Brown-puffer-vest-leggings-outfit-with-white-sneakers-YESMISSY.jpg" alt="Placeholder Image12">
+            </div>
+            <div class="box-text">
+                <p>mordern dress</p>
+                <p><i class='bx bx-rupee'></i>5,000</p>
+                <button onclick="total(5000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+            <img src="images\womens\office-outfits-women-to-rock-this-winter-style-fashion-outfits-instagram-1565759589pc48l.jpg" alt="Placeholder Image13">
+            </div>
+            <div class="box-text">
+                <p>office-suite</p>
+                <p><i class='bx bx-rupee'></i>6,000</p>
+                <button onclick="total(6000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+             <img src="images\womens\xl-moj-e-dariya-007-siya-fashion-original-imagf8m56drjespf.jpeg" alt="Placeholder Image14">
+            </div>
+            <div class="box-text">
+                <p>pinkish tops</p>
+                <p><i class='bx bx-rupee'></i>2,000</p>
+                <button onclick="total(2000)">Add to cart</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                 <img src="images\womens\IMG_0237.jpg" alt="Placeholder Image15">
+                </div>
+                <div class="box-text">
+                   <p>Blue-tops with palozzo</p>
+                   <p><i class='bx bx-rupee'></i>4,000</p>
+                   <button onclick="total(4000)">Add to cart</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="image-container1">
+                <div class="slider">
+                    <img src="images/womens/61kyrkaMYfL._AC_SR462,693_.jpg" alt="Image 1">
+                    <img src="images/womens/zoom_0-1717775847.jpg" alt="Image 2">
+                    <img src="images/womens/banarasi-saree-in-grey-v1-suna1131.webp" alt="Image 3">
+                    <img src="images/womens/71Ji2hUMr7L._AC_UY1100_FMwebp_ - Copy.webp" alt="Image 3">
+                    <img src="images/womens/zoom_0-1662819852.jpg" alt="Image 3">
+                    <img src="images/womens/shree-jeenmata-collection-Brown-Synthetic-SDL467781726-1-38f42.jpeg" alt="Image 4">
+                </div>
+            </div>
+  
+    <div class="container">
+        <div class="box">
+            <div class="box-image">
+                <img src="images\womens\61MW-45W+lS._AC_UY1100_FMwebp_.webp" alt="Placeholder Image16">
+            </div>
+            <div class="box-text">
+                <p>voilet fulltops</p>
+                <p><i class='bx bx-rupee'></i>6,000</p>
+                <button onclick="total(6000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+            <img src="images\womens\61wlFY2BdJL._AC_UY1100_FMwebp_.webp" alt="Placeholder Image17">
+            </div>
+            <div class="box-text">
+                <p>voilet full longtops</p>
+                <p><i class='bx bx-rupee'></i>4,000</p>
+                <button onclick="total(4000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+             <img src="images\womens\GettyImages-1430402457-33e8b80f395a433cbe319d72e8fb5fef.jpg" alt="Placeholder Image18">
+            </div>
+            <div class="box-text">
+                <p>mordern coat and pants</p>
+                <p><i class='bx bx-rupee'></i>5,000</p>
+                <button onclick="total(5000)">Add to cart</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                 <img src="images\womens\41Om+imsHBL._AC_ - Copy.jpg" 
+                 alt="Placeholder Image19">
+                </div>
+                <div class="box-text">
+                   <p>blue silk cotton saree</p>
+                   <p><i class='bx bx-rupee'></i>5,000</p>
+                   <button onclick="total(5000)">Add to cart</button>
+                </div>
+                </div>
+            </div>
+    </section>
+    <div class="container">
+        <div class="box">
+            <div class="box-image">
+                <img src="images\womens\Apnisha-Silk-Blend-Embellished-Saree-SDL529251792-1-82121.jpeg" alt="Placeholder Image20">
+            </div>
+            <div class="box-text">
+                <p>orange saree</p>
+                <p><i class='bx bx-rupee'></i>5,000</p>
+                <button onclick="total(5000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+            <img src="images\womens\pri_175_p-1697556250.jpg" alt="Placeholder Image21">
+            </div>
+            <div class="box-text">
+                <p>mordern suite</p>
+                <p><i class='bx bx-rupee'></i>5,000</p>
+                <button onclick="total(5000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+             <img src="images\womens\oddy4_512.webp" alt="Placeholder Image22">
+            </div>
+            <div class="box-text">
+                <p>mordern tops</p>
+                <p><i class='bx bx-rupee'></i>3,000</p>
+                <button onclick="total(3000)">Add to cart</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                 <img src="images\womens\shree-jeenmata-collection-Brown-Synthetic-SDL467781726-1-38f42.jpeg" 
+                 alt="Placeholder Image23">
+                </div>
+                <div class="box-text">
+                   <p>brown flowered chudi</p>
+                   <p><i class='bx bx-rupee'></i>5,000</p>
+                   <button onclick="total(5000)">Add to cart</button>
+                </div>
+                </div>
+            </div>
+    </section>
+    <div class="container">
+        <div class="box">
+            <div class="box-image">
+                <img src="images\womens\zoom_0-1676606891.jpg" alt="Placeholder Image24">
+            </div>
+            <div class="box-text">
+                <p>mordern dress</p>
+                <p><i class='bx bx-rupee'></i>5,000</p>
+                <button onclick="total(5000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+            <img src="images\womens\zoom_0-1637054560.jpg" alt="Placeholder Image25">
+            </div>
+            <div class="box-text">
+                <p>office-suite</p>
+                <p><i class='bx bx-rupee'></i>4,000</p>
+                <button onclick="total(4000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+             <img src="images\womens\zoom_0-1662819852.jpg" alt="Placeholder Image26">
+            </div>
+            <div class="box-text">
+                <p>Darkblue-suite</p>
+                <p><i class='bx bx-rupee'></i>5,000</p>
+                <button onclick="total(5000)">Add to cart</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                 <img src="images\womens\zoom_0-1717775847.jpg"
+                  alt="Placeholder Image27">
+                </div>
+                <div class="box-text">
+                   <p>office-suite</p>
+                   <p><i class='bx bx-rupee'></i>4,000</p>
+                   <button onclick="total(4000)">Add to cart</button>
+                </div>
+                </div>
+            </div>
+   
+    <div class="container">
+        <div class="box">
+            <div class="box-image">
+                <img src="images\womens\Gazal-Fashions-Banarasi-Silk-Embellished-SDL472656029-1-6ea6c.jpeg" alt="Placeholder Image28">
+            </div>
+            <div class="box-text">
+                <p>red decoratioary saree</p>
+                <p><i class='bx bx-rupee'></i>10,000</p>
+                <button onclick="total(10000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+            <img src="images\womens\zoom_0-1683085993.jpg" alt="Placeholder Image29">
+            </div>
+            <div class="box-text">
+                <p>sandal mordern dress</p>
+                <p><i class='bx bx-rupee'></i>6,000</p>
+                <button onclick="total(6000)">Add to cart</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-image">
+             <img src="images\womens\zoom_0-1685727825.jpg" alt="Placeholder Image30">
+            </div>
+            <div class="box-text">
+                <p>mordern dress</p>
+                <p><i class='bx bx-rupee'></i>3,000</p>
+                <button onclick="total(3000)">Add to cart</button>
+            </div>
+            </div>
+            <div class="box">
+                <div class="box-image">
+                 <img src="images\womens\zoom_0-1685107656.jpg" 
+                 alt="Placeholder Image31">
+                </div>
+                <div class="box-text">
+                   <p>black top with jean</p>
+                   <p><i class='bx bx-rupee'></i>4,000</p>
+                   <button onclick="total(4000)">Add to cart</button>
+                </div>
+                </div>
+</div>
+</body>
+
+            <footer>
+                <p>&copy; 2021 - All rights reserved</p>
+                <ul>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <div class="social-media">
+                  <a href="#" class="facebook"><i class='bx bxl-facebook-circle'></i></a>
+                  <a class="twitter" href="#"><i class='bx bxl-twitter'></i></a>
+                  <a class="instagram" href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+              </footer>
+            
+              <script>
+                function toggleMode() {
+                    var body = document.body;
+                    var modeIcon = document.getElementById("mode-icon");
+            
+                    body.classList.toggle("dark-mode");
+            
+                    if (body.classList.contains("dark-mode")) {
+                        modeIcon.classList.replace("bx-moon", "bx-sun");
+                    } else {
+                        modeIcon.classList.replace("bx-sun", "bx-moon");
+                    }
+                }
+                
+                 var totalAmount = 0;
+
+        function total(price) {
+            var ct = document.querySelector("#count").innerHTML;
+            ct = Number(ct);
+            ct++;
+            document.querySelector("#count").innerHTML = ct;
+
+
+            var t=document.querySelector("#total").innerHTML;
+            t = Number(t);
+
+            t += price;
+            document.querySelector("#total").innerHTML = t;
+           }
+           
+
+           function showPopup(price) {
+            
+            document.getElementById("total-price").textContent = price;
+            document.getElementById("cart-popup").style.display = "block";
+        }
+        
+        function closePopup() {
+            document.getElementById("cart-popup").style.display = "none";
+        }
+        
+        document.getElementById("main-image").addEventListener("click", function() {
+            var imageRow = document.getElementById("image-row");
+            if (imageRow.style.display === "none" || imageRow.style.display === "") {
+                imageRow.style.display = "flex";
+            } else {
+                imageRow.style.display = "none";
+            }
+        });
+    </script>
+</html>

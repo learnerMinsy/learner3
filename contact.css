@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin:0px ;
+  background-color:#ffd8de;
+  background-image:url(images1/pngtree-clothing-mens-clothing-store-shopping-summer-clothing-photography-map-with-map-image_796888.jpg);
+    background-size: cover;
+    background-position: center;
+  
+}
+nav {
+  background-color:hotpink; 
+  height:80px;
+  margin-bottom: 12px;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  display: block;
+  color:white;
+  font-size:24px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav ul li i {
+  margin-right:8px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size:24px;
+  padding: 5px;
+  
+}
+.bx-cart {
+  font-size: 30px;
+  color: #333; /* Change this to the desired color */
+  cursor: pointer;
+   margin-top:8px;
+}
+
+/* Styling for the cart count bubble */
+.cart-count {
+  background-color:black;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+li:hover .bx-cart {
+  color:#000; 
+}
+nav ul li a:hover {
+  background-color:green;
+}
+.logo img {
+  height: 60px;
+  margin-left: 30px;
+  margin-top:10px;
+  border-radius:50% ;
+  float: left;
+}
+
+.a{
+    font-size:25px ;
+    margin-left:30% ;
+    padding:25px ;
+}
+.a:hover{
+    color: hotpink;
+    font-size:30px ;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: rgba(225,225, 225, 0.5); 
+    
+}
+
+form label {
+    display: block;
+    margin:20px 10px;
+    font-size:20px;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 12px 10px 10px 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+form button {
+    width:  85%;
+    background-color:black;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 12px 10px 10px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+form button:hover {
+    background-color:hotpink;
+    color:#fff;
+}
+
+.flex {
+  padding: 0px;
+}
+
+.contact-info {
+  margin-left: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 500px;
+  color:#fff;
+  line-height: 2.0;
+  height: 300px;
+  background-color:hwb(120 36% 6%);
+  border-radius: 15px;
+  box-shadow:2px 2px 2px #94e994;
+}
+.contact-info .heading {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 28px;
+  color:#fff;
+}
+footer {
+    background-color:gray;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  footer ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  footer ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  footer .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  footer .social-media a {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  footer ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 255, 0.358);
+  }
+  .social-media .facebook {
+    color: #3b5998;
+  }
+  .social-media .facebook:hover {
+    color: #1d3465;
+  }
+  .social-media .twitter {
+    color: #1da1f2;
+  }
+  .social-media .twitter:hover {
+    color: #0377a5;
+  }
+  .social-media .instagram {
+    color: #c13584;
+  }
+  .social-media .instagram:hover {
+    color: #a42665;
+  }
+  
+  
+  @media screen and (max-width:500px){
+    .contact-info {
+      margin-left: 10%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 400px;
+      color:#fff;
+      line-height: 2.0;
+      height: 300px;
+      background-color:hwb(120 36% 6%);
+      border-radius: 15px;
+      box-shadow:2px 2px 2px #94e994;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      width: 400px;
+      text-align: left;
+      border-radius: 15px;
+      border: 2px solid black;
+      background-color: rgba(225,225, 225, 0.5); 
+    }
+  }

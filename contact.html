@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Dress Sale</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    <header>
+       
+            <div class="logo">
+                <img src="images\girllogo.jpg" alt="Dress Sale Logo">
+            </div>
+            <nav>
+              <ul>
+                  <li><a href="index.html"><i class='bx bx-home'></i> Home</a></li>
+                  <li><a href="about.html"><i class='bx bx-info-circle'></i> About</a></li>
+                  <li><a href="contact.html"><i class='bx bx-envelope'></i> Contact</a></li>
+                  <li><a href="login1.html"><i class='bx bx-log-in icon'></i>Login</a></li>
+                  <li><a href="signup.html"><i class='bx bx-user-plus icon'></i>Singup</a></li>
+                  <li><i class='bx bx-cart'></i><span class="cart-count" id="count">0</span></li>
+      </ul>
+  </nav>
+    </header>
+<body>
+<section id="contact">
+    <div class="a">
+    <h2>Contact Us</h2>
+    </div>
+    <form  onsubmit="return validateContactForm()"action="contact_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" ></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<div class="flex">
+    <div class="contact-info">
+      <h1 class="heading">Contact Information</h1>
+      <p>
+        Name: STYLISH DRESSES<br>
+        Email: www.website.com<br>
+        Phone: 123-456-7890
+      </p>
+    </div>
+</body><br>
+
+<footer>
+    <p>&copy; 2021 - All rights reserved</p>
+    <ul>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <div class="social-media">
+      <a href="#" class="facebook"><i class='bx bxl-facebook-circle'></i></a>
+      <a class="twitter" href="#"><i class='bx bxl-twitter'></i></a>
+      <a class="instagram" href="#"><i class='bx bxl-instagram'></i></a>
+    </div>
+  </footer>
+  <script>
+    function validateContactForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      if (name == "") {
+          alert("Name is required.");
+      } else if (email == "") {
+          alert("Email is required.");
+      } else if (message == "") {
+          alert("Message is required.");
+      } else {
+          alert("Message sent successfully!");
+          return true; 
+      }
+      return false; 
+  }
+  </script>
+</html>
